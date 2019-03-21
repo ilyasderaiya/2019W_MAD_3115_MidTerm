@@ -9,7 +9,7 @@
 import UIKit
 
 class StudentResultViewController: UIViewController {
-
+    var s = Student()
     @IBOutlet weak var lblStudId: UILabel!
     @IBOutlet weak var lblStudName: UILabel!
     @IBOutlet weak var lblStudGender: UILabel!
@@ -27,12 +27,12 @@ class StudentResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Details()
         // Do any additional setup after loading the view.
     }
     
     func Details(){
-        var s = Student()
+        
         lblStudId.text = s.studentID
         lblStudName.text = s.studentName
         lblStudGender.text = s.studentGender
@@ -47,6 +47,16 @@ class StudentResultViewController: UIViewController {
         lblStudTotal.text = String(s.studentTotal)
         lblStudPercent.text = String(s.studentPercentage)
         lblStudGrade.text = s.studentGrade
+    }
+    @IBAction func btnLogoutClick(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let signInVC = sb.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.present(signInVC, animated: true)
+    }
+    @IBAction func btnBackClick(_ sender: Any) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let StudVc = sb.instantiateViewController(withIdentifier: "studVC") as! StudentEntryViewController
+        self.present(StudVc, animated: true)
     }
     
 }

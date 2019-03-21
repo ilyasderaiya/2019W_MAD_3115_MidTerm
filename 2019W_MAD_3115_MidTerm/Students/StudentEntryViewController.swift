@@ -160,6 +160,7 @@ class StudentEntryViewController: UIViewController, UIPickerViewDelegate, UIPick
         s.calc()
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let studResultVC = sb.instantiateViewController(withIdentifier: "StudentResultViewController") as! StudentResultViewController
+        studResultVC.s = s
         //self.navigationController?.pushViewController(studResultVC, animated: true)
         self.present(studResultVC, animated: true)
     }
