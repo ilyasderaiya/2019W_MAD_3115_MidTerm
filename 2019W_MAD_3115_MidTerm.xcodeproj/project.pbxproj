@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1CAFAC22431CF600C4B0B6 /* Student.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1CAFAB22431CF600C4B0B6 /* Student.png */; };
 		9BAC0C062241C855002252C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC0C052241C855002252C8 /* AppDelegate.swift */; };
 		9BAC0C082241C855002252C8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC0C072241C855002252C8 /* LoginViewController.swift */; };
 		9BAC0C0B2241C855002252C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC0C092241C855002252C8 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B1CAFAB22431CF600C4B0B6 /* Student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Student.png; path = ../../Student.png; sourceTree = "<group>"; };
 		9BAC0C022241C855002252C8 /* 2019W_MAD_3115_MidTerm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2019W_MAD_3115_MidTerm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAC0C052241C855002252C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BAC0C072241C855002252C8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				9BAC0C0C2241C857002252C8 /* Assets.xcassets */,
 				9BAC0C0E2241C857002252C8 /* LaunchScreen.storyboard */,
 				9BAC0C112241C857002252C8 /* Info.plist */,
+				9B1CAFAB22431CF600C4B0B6 /* Student.png */,
 			);
 			path = 2019W_MAD_3115_MidTerm;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAC0C102241C857002252C8 /* LaunchScreen.storyboard in Resources */,
+				9B1CAFAC22431CF600C4B0B6 /* Student.png in Resources */,
 				9BAC0C0D2241C857002252C8 /* Assets.xcassets in Resources */,
 				9BAC0C0B2241C855002252C8 /* Main.storyboard in Resources */,
 			);

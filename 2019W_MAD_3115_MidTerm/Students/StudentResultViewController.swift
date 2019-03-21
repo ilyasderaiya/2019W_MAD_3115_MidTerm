@@ -10,21 +10,43 @@ import UIKit
 
 class StudentResultViewController: UIViewController {
 
+    @IBOutlet weak var lblStudId: UILabel!
+    @IBOutlet weak var lblStudName: UILabel!
+    @IBOutlet weak var lblStudGender: UILabel!
+    @IBOutlet weak var lblStudCourse: UILabel!
+    @IBOutlet weak var lblStudEmail: UILabel!
+    @IBOutlet weak var lblStudBirt: UILabel!
+    @IBOutlet weak var lblStudMark1: UILabel!
+    @IBOutlet weak var lblStudMark2: UILabel!
+    @IBOutlet weak var lblStudMark3: UILabel!
+    @IBOutlet weak var lblStudMark4: UILabel!
+    @IBOutlet weak var lblStudMark5: UILabel!
+    @IBOutlet weak var lblStudTotal: UILabel!
+    @IBOutlet weak var lblStudPercent: UILabel!
+    @IBOutlet weak var lblStudGrade: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func Details(){
+        var s = Student()
+        lblStudId.text = s.studentID
+        lblStudName.text = s.studentName
+        lblStudGender.text = s.studentGender
+        lblStudCourse.text = s.studentCourse
+        lblStudEmail.text = s.studentEmail
+        lblStudBirt.text = s.studentBirthdate
+        lblStudMark1.text = String(s.studentmarks[0])
+        lblStudMark2.text = String(s.studentmarks[1])
+        lblStudMark3.text = String(s.studentmarks[2])
+        lblStudMark4.text = String(s.studentmarks[3])
+        lblStudMark5.text = String(s.studentmarks[4])
+        lblStudTotal.text = String(s.studentTotal)
+        lblStudPercent.text = String(s.studentPercentage)
+        lblStudGrade.text = s.studentGrade
     }
-    */
-
+    
 }
